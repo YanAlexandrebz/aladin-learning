@@ -36,7 +36,12 @@ def generate_release_notes(changes):
     return relevant_changes
 
 # Exemplo de uso: passando as descrições de mudanças e obtendo as mudanças relevantes para o release notes
-changes = changes.py
+changes = [
+    "Corrigido bug na função de login",
+    "Adicionada nova funcionalidade de busca",
+    "Atualizada documentação do projeto",
+    "Atualizada da tela de cadastro"
+]
 
 relevant_changes = generate_release_notes(changes)
 
