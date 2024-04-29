@@ -1,0 +1,4 @@
+description,result
+Teste de unidade para função de soma,passou
+Teste de integração com banco de dados,falhou
+Teste de performance para endpoint de API,passou
