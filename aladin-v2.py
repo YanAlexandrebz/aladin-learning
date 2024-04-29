@@ -50,8 +50,8 @@ def generate_release_notes(changes):
             relevant_changes.append(change)
     return relevant_changes
 
-owner = "python"
-repo = "cpython"
+owner = "jquery"
+repo = "jquery"
 changes = get_release_notes(owner,repo)
 relevant_changes = generate_release_notes(changes)
 
