@@ -56,5 +56,6 @@ changes = get_release_notes(owner,repo)
 relevant_changes = generate_release_notes(changes)
 
 print("******** Release Notes ********")
-for change in relevant_changes:
-    print("- " + change)
+print(relevant_changes)
+# for change in relevant_changes:
+#     print("- " + change)
