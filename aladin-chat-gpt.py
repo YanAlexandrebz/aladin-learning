@@ -5,7 +5,7 @@ import requests
 import openai
 
 # Defina sua chave de API do OpenAI como uma variável de ambiente ou insira-a diretamente aqui
-openai.api_key = 'sk-proj-C8Du18ss9fYSAbiRLuj7T3BlbkFJueTz19o9xIBV7Aiatmne'
+openai.api_key = 'sk-proj-St8h3W3zE5Qqquu5oUEQT3BlbkFJpS7cY8n5C3oFCPGTgr6K'
 
 # Função para coletar dados de mudanças do jQuery
 def get_jquery_changes():
