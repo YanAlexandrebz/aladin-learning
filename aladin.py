@@ -7,7 +7,7 @@ from sklearn.metrics import classification_report
 # Suponha que você tenha um arquivo CSV com dados de mudanças no repositório
 # Este arquivo pode conter duas colunas: 'change_description' e 'relevant'
 # 'change_description' contém o texto da mudança, 'relevant' indica se é relevante para o release notes (1) ou não (0)
-data = pd.read_csv('teste-changes.csv')
+data = pd.read_csv('changes-conditions.csv')
 
 # Dividir os dados em conjunto de treinamento e teste
 X_train, X_test, y_train, y_test = train_test_split(data['change_description'], data['relevant'], test_size=0.2)
