@@ -25,5 +25,5 @@ jobs:
 
       - name: Train ML Model and Generate Release Notes
         run: |
-          python aladin-v3.py 
+          python aladin.py 
 
