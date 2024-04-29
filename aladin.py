@@ -43,6 +43,7 @@ changes = [
 ]
 
 relevant_changes = generate_release_notes(changes)
-print("Release Notes:")
+
+print("******** Release Notes ********")
 for change in relevant_changes:
     print("- " + change)
