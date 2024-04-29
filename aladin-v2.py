@@ -62,23 +62,22 @@ class ReleaseNotesGenerator:
         else:
             return "Sem mudanças no código. Nenhuma nota de lançamento gerada."
 
+# Exemplo de uso
+previous_code = """
+def hello_world():
+    print("Hello, world!")
+"""
 
-          # Exemplo de uso
-          previous_code = """
-          def hello_world():
-              print("Hello, world!")
-          """
-          
-          new_code = """
-          def meu_codigo():
-              print("oh neymar")
-          
-          def hello_world():
-              print("Hello, world!")
-              meu_codigo()
-              print("Goodbye, world!")
-          """
-          
-          generator = ReleaseNotesGenerator(previous_code, new_code)
-          release_notes = generator.generate_release_notes()
-          print(release_notes)
+new_code = """
+def meu_codigo():
+    print("oh neymar")
+
+def hello_world():
+    print("Hello, world!")
+    meu_codigo()
+    print("Goodbye, world!")
+"""
+
+generator = ReleaseNotesGenerator(previous_code, new_code)
+release_notes = generator.generate_release_notes()
+print(release_notes)
