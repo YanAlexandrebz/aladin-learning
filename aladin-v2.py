@@ -50,8 +50,9 @@ def generate_release_notes(changes):
             relevant_changes.append(change)
     return relevant_changes
 
-
-changes = get_release_notes(python, cpython)
+owner = "python"
+repo = "cpython"
+changes = get_release_notes(owner,repo)
 relevant_changes = generate_release_notes(changes)
 
 print("******** Release Notes ********")
