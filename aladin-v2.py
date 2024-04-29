@@ -52,6 +52,10 @@ def generate_release_notes(changes):
 
 owner = "jquery"
 repo = "jquery"
+
+print("******** Release Notes Jquery ********")
+print(get_release_notes(owner,repo))
+
 changes = get_release_notes(owner,repo)
 relevant_changes = generate_release_notes(changes)
 
