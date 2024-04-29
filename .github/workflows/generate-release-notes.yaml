@@ -6,7 +6,7 @@ on:
       - master
 
 jobs:
-  build:
+  generate-release-notes:
     runs-on: ubuntu-latest
 
     steps:
@@ -24,7 +24,7 @@ jobs:
           pip install scikit-learn pandas
           pip install requests
 
-      - name: Train ML Model and Generate Release Notes
+      - name: Train Machine Learning Model and Generate Release Notes
         run: |
           python aladin-v2.py 
 
