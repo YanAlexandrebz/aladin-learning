@@ -55,8 +55,8 @@ if changes:
     relevant_changes = generate_release_notes(model, vectorizer, changes)
 
     # Exibindo as notas de release relevantes
-    print("******** Release Notes ********")
+    print("🚀📝🎉 Release Notes 🎉📝🚀")
     for change in relevant_changes:
-        print("- " + change)
+        print("🔹 " + change)
 else:
     print("Falha ao obter as mudanças do jQuery.")
