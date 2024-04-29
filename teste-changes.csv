@@ -1,4 +1,4 @@
 change_description,relevant
-Teste de unidade para função de soma,1
-Teste de integração com banco de dados,0
-Teste de performance para endpoint de API,1
+Corrigido bug na função de login,0
+Adicionada nova funcionalidade de busca,1
+Atualizada documentação do projeto,0
