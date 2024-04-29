@@ -23,7 +23,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install scikit-learn pandas
           pip install requests
-          pip install openai
+          pip install openai==0.28
 
       - name: Train Machine Learning Model and Generate Release Notes
         run: |
