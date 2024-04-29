@@ -51,7 +51,7 @@ def generate_release_notes(changes):
     return relevant_changes
 
 
-changes = get_release_notes(python,cpython)
+changes = get_release_notes(python, cpython)
 relevant_changes = generate_release_notes(changes)
 
 print("******** Release Notes ********")
