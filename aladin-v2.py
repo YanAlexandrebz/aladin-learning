@@ -4,7 +4,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.svm import SVC
 from sklearn.metrics import classification_report
 
-import requests as requests
+import requests
 
 # Suponha que você tenha um arquivo CSV com dados de mudanças no repositório
 # Este arquivo pode conter duas colunas: 'change_description' e 'relevant'
