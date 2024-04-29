@@ -27,5 +27,5 @@ jobs:
 
       - name: Train Machine Learning Model and Generate Release Notes
         run: |
-          python aladin-jquery-comp.py
+          python aladin.py
 
