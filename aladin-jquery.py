@@ -2,6 +2,7 @@ import pandas as pd
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.svm import SVC
 from sklearn.metrics import classification_report
+from sklearn.model_selection import train_test_split
 
 import requests
 
@@ -45,7 +46,7 @@ if changes:
     # Pode ser o modelo treinado em um conjunto de dados similar
     # Aqui vou criar um modelo de exemplo apenas para fins ilustrativos
     data = pd.read_csv('changes-conditions.csv')
-    X_train, _, y_train, _ = train_test_split(data['change_description'], data['relevant'], test_size=0.0)
+    X_train, y_train = data['change_description'], data['relevant']
     vectorizer, X_train_vectorized = vectorize_text(X_train)
     model = SVC(kernel='linear')
     model.fit(X_train_vectorized, y_train)
