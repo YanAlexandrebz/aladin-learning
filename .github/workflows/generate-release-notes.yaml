@@ -1,4 +1,4 @@
-name: ${{ "generate-release-notes" }}
+name: ${{ generate-release-notes }}
 
 on:
   push:
